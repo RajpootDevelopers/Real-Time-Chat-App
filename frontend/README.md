@@ -12,3 +12,6 @@ https://tailwindcss.com/docs/guides/vite
 https://daisyui.com/docs/install/
 
 https://tailwindcss-glassmorphism.vercel.app/
+
+
+https://react-hot-toast.com/
