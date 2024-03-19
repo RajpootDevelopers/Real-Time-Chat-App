@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 
 const SearchInput = () =>{
 	const [ search, setSearch ] = useState("")
-	const { setSelectedConversation }= useConversation()
+	const { setSelectedConversation } = useConversation()
 	const { conversations } = useGetConversations() 
 
 	const handleSubmit = (e) => {
@@ -28,8 +28,8 @@ const SearchInput = () =>{
 		<form className="flex items-center gap-2" onSubmit={handleSubmit}>
 			<input 
 			type="text" 
-			placeholder="Search..." 
-			className="input input-boardered rounded-full" 
+			placeholder="Search ..." 
+			className="w-full input input-boardered rounded-full" 
 			value={search}
 			onChange={(e)=>setSearch(e.target.value)}
 			/>

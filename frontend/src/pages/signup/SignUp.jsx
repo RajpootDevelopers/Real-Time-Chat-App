@@ -4,17 +4,17 @@ import { useState } from "react";
 import useSignup from "../../hooks/useSignup";
 const SignUp = () => {
 
-	const [inputs, setInputs ] = useState({
+	const [ inputs, setInputs ] = useState({
 		fullName : "",
 		username : "", 
 		password : "",
 		confirmPassword : "",
 		gender : ""
 	});
-	const {loading, signup}=useSignup()
+	
+	const { loading, signup } = useSignup()
 
 	const handleCheckboxChange = (gender) =>{
-
 		setInputs({...inputs, gender})
 	}
 	
@@ -41,9 +41,6 @@ const SignUp = () => {
 						<input 
 						value={inputs.fullName}
 						onChange={(e)=> {
-							// console.log(e)
-							// console.log(e.target)
-							// console.log(e.target.value)
 							setInputs({...inputs, fullName : e.target.value})
 						}}
 						type='text' 

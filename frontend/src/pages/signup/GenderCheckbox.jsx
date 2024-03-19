@@ -1,4 +1,3 @@
-
 const GenderCheckbox = ({onCheckBoxChange, selectedGender}) => {
 	return (
 		<div className='flex'>
