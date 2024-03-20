@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
-		origin: ["https://real-time-chat-app-production-b17c.up.railway.app/"],
+		origin: ["http://localhost:8000"],
 		methods: ["GET", "POST"],
 	},
 });
