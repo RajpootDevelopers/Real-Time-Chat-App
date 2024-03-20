@@ -7,7 +7,7 @@ export default defineConfig({
   server : {
     port : 3000,
     proxy : {
-      "/api" : { target : "https://real-time-chat-app-iota-eight.vercel.app/"}
+      "/api" : { target : "http://localhost:5000"}
     }
   }
 })
