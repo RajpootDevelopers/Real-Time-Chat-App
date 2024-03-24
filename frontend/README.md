@@ -15,3 +15,21 @@ https://tailwindcss-glassmorphism.vercel.app/
 
 
 https://react-hot-toast.com/
+
+automatic scrolling
+
+chat coloring
+
+online offline status
+
+Chat Time 
+
+Protected Routes
+
+Search Chat
+
+Beatifull UI
+
+
+const lastMsg = useRef()
+lastMsg.current.scrollIntoView({ behavior : "smoot" })

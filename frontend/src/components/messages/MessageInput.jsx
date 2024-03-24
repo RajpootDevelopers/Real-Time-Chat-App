@@ -9,10 +9,11 @@ const MessageInput = () => {
   async function handleSubmit (e){
     e.preventDefault();
     if(!message) return;
+    if(message.trim() === "") return;
     await sendMessages(message);
     setMessage("")
-
   }
+
   return (
     <form className="px-4 my-3" onSubmit={handleSubmit}>
         <div className="w-full relative">
@@ -22,8 +23,14 @@ const MessageInput = () => {
             value={message}
             onChange={(e)=>setMessage(e.target.value)}
             />
+            {/* <input type="file" className="absolute inset-y-2 inset-x-2 opacity-5" placeholder="img"/> */}
             <button type="submit" className="absolute inset-y-0 end-1 flex items-center pe-3 ">
+              { loading ? (
+                <div className="loading loading-spinner"></div>
+              ) : (
                 <BsSend />
+              )
+            }  
             </button>
         </div>
       
