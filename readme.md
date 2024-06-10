@@ -1,1 +1,2 @@
-    // "build": "npm install && npm install -prefix frontend && npm run build --prefix frontend"
+    // 
+    "build" : "npm install --omit=dev && npm run build:app"
